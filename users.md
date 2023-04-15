@@ -7,5 +7,5 @@
 - `useradd` : adding user
     - `-d` : add user home directory
     - `-p` : password
-- `userdel` : delteing user
+- `userdel` : deleteing user
 - `chage` : for password expiration 
