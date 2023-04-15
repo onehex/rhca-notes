@@ -11,3 +11,9 @@
     - `c` : for comment
 - `userdel` : deleteing user
 - `chage` : for password expiration 
+
+
+# local user
+- locla user can only modify only 2 dirs
+- `/home/<usrename>`
+- `/tmp`
