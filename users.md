@@ -15,6 +15,6 @@
 
 
 # local user
-- locla user can only modify only 2 dirs
+- local user can only modify only 2 dirs
 - `/home/<usrename>`
 - `/tmp`
