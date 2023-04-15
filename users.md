@@ -1,10 +1,11 @@
-# user defualt files - (*)
+# user
+## user defualt files - (*)
 - for passwords and defult age of password
 - cahnge this to stop user to login 
 - `/etc/login.defs`
 - `/etc/default/useradd`
 
-# commands
+## commands
 - `useradd` : adding user
     - `-d` : add user home directory
     - `-p` : password
