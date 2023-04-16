@@ -25,6 +25,7 @@
 
 ## universal sudoers config file
 - `/etc/sudoers`
+- edit this file with `visudo`
 
 ## edit this file of the user to give all permission
 - `sudo vim /etc/sudoers.d/<username>`
@@ -32,7 +33,8 @@
     - `<username> ALL=(ALL)   ALL`
 
 ## to give sudo permission to user
-- add user to wheel group
+- `%wheel     ALL=(ALL)     ALL, newuser`
+    - add newuser to wheel group
 
 ## to give user passwordless sudo access
 - user ALL=(ALL) NOPASSWD: ALL
