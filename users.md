@@ -37,6 +37,7 @@
 
 
 ## user sudoers file
+- `/etc/sudoers.d/<user>`
 > edit this
 
 ### edit this file of the user to give all permission
