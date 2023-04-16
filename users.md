@@ -18,3 +18,18 @@
 - local user can only modify only 2 dirs
 - `/home/<usrename>`
 - `/tmp`
+
+
+
+# Sudo Power
+
+## universal sudoers config file
+- `/etc/sudoers`
+
+## edit this file of the user to give all permission
+- `sudo vim /etc/sudoers.d/<username>`
+- add this to the file
+    - `<username> ALL=(ALL)   ALL`
+
+## to give sudo permission to user
+- add user to wheel group
