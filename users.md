@@ -39,3 +39,4 @@
 
 ## give user from a certain group passwordless access
 - %admins ALL=(ALL) NOPASSWD: ALL
+    - notice `%`
