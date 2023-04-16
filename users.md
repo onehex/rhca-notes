@@ -67,3 +67,9 @@
 
 - add to multiple
     - `chmod ugo-rwx <file/dir>`
+
+## numeric file permissions
+0 = no permission
+1 = execute
+2 = write
+4 = read
