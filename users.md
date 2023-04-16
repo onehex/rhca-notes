@@ -21,7 +21,10 @@
 
 
 
-# Sudo Power
+# nosuSudo Power
+
+- user should exit already
+- user need to have password setup already for sudo
 
 ## add exiting user to wheel group
 `usermod -aG wheel <username>`  
@@ -40,8 +43,8 @@
     - add newuser to wheel group
 
 ## to give user passwordless sudo access
-- `<user> ALL=(ALL) NOPASSWD: ALL`
+- `<user> ALL=(ALL) NOPASSWD:ALL`
 
 ## give user from a certain group passwordless access
-- `%<admins> ALL=(ALL) NOPASSWD: ALL`
+- `%<admins> ALL=(ALL) NOPASSWD:ALL`
     - notice `%`
