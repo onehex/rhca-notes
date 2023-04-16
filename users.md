@@ -58,3 +58,12 @@
 - `<user>   ALL=(root)  /path/to/commands, /command2, NOPASSWD:ALL`
 - get path of the command
     - `which <command>`
+
+
+# Permission
+- give permission to all
+    - `chmod a+rwx <file/dir>`
+    - a for all
+
+- add to multiple
+    - `chmod ugo-rwx <file/dir>`
