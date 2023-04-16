@@ -23,6 +23,9 @@
 
 # Sudo Power
 
+## add exiting user to wheel group
+`usermod -aG wheel <username>`  
+
 ## universal sudoers config file
 - `/etc/sudoers`
 - edit this file with `visudo`
@@ -37,8 +40,8 @@
     - add newuser to wheel group
 
 ## to give user passwordless sudo access
-- user ALL=(ALL) NOPASSWD: ALL
+- `<user> ALL=(ALL) NOPASSWD: ALL`
 
 ## give user from a certain group passwordless access
-- %admins ALL=(ALL) NOPASSWD: ALL
+- `%<admins> ALL=(ALL) NOPASSWD: ALL`
     - notice `%`
