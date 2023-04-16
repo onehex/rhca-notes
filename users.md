@@ -35,18 +35,25 @@
 - should not edit
 - safe edit this file with `visudo`
 
-## edit this file of the user to give all permission
+
+## user sudoers file
+> edit this
+
+### edit this file of the user to give all permission
 - `sudo vim /etc/sudoers.d/<username>`
 - add this to the file
     - `<username> ALL=(ALL)   ALL`
 
-## to give sudo permission to user
-- `%wheel     ALL=(ALL)     ALL, newuser`
-    - add newuser to wheel group
 
-## to give user passwordless sudo access
+### to give user passwordless sudo access
 - `<user> ALL=(ALL) NOPASSWD:ALL`
 
-## give user from a certain group passwordless access
+### give user from a certain group passwordless access
 - `%<admins> ALL=(ALL) NOPASSWD:ALL`
     - notice `%`
+
+### allow only specific commands
+- in user's `/etc/sudoer.d/<username>` file
+- `<user>   ALL=(root)  /path/to/commands, /command2, NOPASSWD:ALL`
+- get path of the command
+    - `which <command>`
