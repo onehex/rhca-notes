@@ -20,18 +20,20 @@
 - `/tmp`
 
 
-
-# nosuSudo Power
+# sudo
+> Give USER Ultra powerfull abilities to destroy everything (no really)
 
 - user should exit already
 - user need to have password setup already for sudo
 
 ## add exiting user to wheel group
-`usermod -aG wheel <username>`  
+- `usermod -aG wheel <username>`  
+    - this add user to to `/etc/group`
 
 ## universal sudoers config file
 - `/etc/sudoers`
-- edit this file with `visudo`
+- should not edit
+- safe edit this file with `visudo`
 
 ## edit this file of the user to give all permission
 - `sudo vim /etc/sudoers.d/<username>`
