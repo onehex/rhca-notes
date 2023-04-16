@@ -35,7 +35,7 @@
 - add user to wheel group
 
 ## to give user passwordless sudo access
-- <user> ALL=(ALL) NOPASSWD: ALL
+- user ALL=(ALL) NOPASSWD: ALL
 
 ## give user from a certain group passwordless access
-- %<admins> ALL=(ALL) NOPASSWD: ALL
+- %admins ALL=(ALL) NOPASSWD: ALL
