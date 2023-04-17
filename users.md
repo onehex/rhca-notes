@@ -79,3 +79,6 @@
 
 ## sticky bit
 - you need 777 permission to set sticky bit
+    - `chmod 777 /dir`
+- stick bit
+    - `chmod o+t /dir`
