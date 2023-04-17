@@ -82,3 +82,28 @@
     - `chmod 777 /dir`
 - stick bit
     - `chmod o+t /dir`
+
+
+# Umask
+- defualt dir permission - `777`
+- defualt file permission - `666`
+```
+## directory
+defualt     7 7 7
+umask       0 2 2
+result      7 5 5
+
+## file
+defualt     6 6 6
+umask       0 2 2
+result      6 4 4
+```
+
+## example
+- you wan defulat perssion of 552 on dir and 432 on files
+- what would be the umask
+
+dir umask = 777 - 553 = 224
+file umask = 666 - 432 = 234
+
+to set defualt perssion set umask
