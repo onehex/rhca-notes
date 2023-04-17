@@ -73,3 +73,9 @@
 1 = execute
 2 = write
 4 = read
+
+
+# Special Permissions
+
+## sticky bit
+- you need 777 permission to set sticky bit
