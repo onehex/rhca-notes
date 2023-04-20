@@ -1,3 +1,7 @@
+# Other Notes
+https://github.com/pushkar100/notes-linux-admin
+https://github.com/jrandj/redha
+
 # user
 ## user defualt files - (*)
 - for passwords and defult age of password
@@ -107,3 +111,8 @@ dir umask = 777 - 553 = 224
 file umask = 666 - 432 = 234
 
 to set defualt perssion set umask
+
+
+# LVM
+https://blog.victormendonca.com/2020/11/18/linux-logical-volume-manager/
+
