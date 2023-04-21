@@ -116,3 +116,14 @@ to set defualt perssion set umask
 # LVM
 https://blog.victormendonca.com/2020/11/18/linux-logical-volume-manager/
 
+
+# graphical targets
+
+## set cli as defualt target
+`systemctl set-default multi-user.target`
+
+## set gui as defualt target
+`systemctl set-default graphical.target`
+
+## GO in GUI Temprary
+`init 5`
