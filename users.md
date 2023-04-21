@@ -127,3 +127,18 @@ https://blog.victormendonca.com/2020/11/18/linux-logical-volume-manager/
 
 ## GO in GUI Temprary
 `init 5`
+
+
+# Go into emeergency mode with
+`init 6`
+
+- find line with vmlinuz and to the end of the line and add rd.break and press ctrl + x
+
+# Passwrod Breaking Steps
+1. rd.break
+2. mount -o remount,rw /sysroot
+3. chroot /sysroot
+4. passwd root
+5. touch /.autorelable
+6. exit
+7. exit
