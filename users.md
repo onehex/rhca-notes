@@ -132,7 +132,7 @@ https://blog.victormendonca.com/2020/11/18/linux-logical-volume-manager/
 # Go into emeergency mode with
 `init 6`
 
-- find line with vmlinuz and to the end of the line and add rd.break and press ctrl + x
+- find line with `vmlinuz` and to the end of the line and add `rd.break` and press `ctrl + x`
 
 # Passwrod Breaking Steps
 1. rd.break
@@ -142,3 +142,23 @@ https://blog.victormendonca.com/2020/11/18/linux-logical-volume-manager/
 5. touch /.autorelable
 6. exit
 7. exit
+
+
+
+
+# Process
+> when program loaded into memory and start running becomes a process
+
+# commands
+- `top`
+- `ps aux`
+- `sleep 1000`
+- kill process
+    - `kill <PID>`
+    - `kill -9 <PID>` <-- force kill
+- `w`
+- `uptime`
+- `lscpu`
+
+
+# services
