@@ -178,5 +178,43 @@ unmask --> remove mask
 
 - logs generated because of this file (importent)
     - /etc/rsyslog.conf
+
 ## Events
 > see in book
+
+- journalctl
+    - `-n`
+    - -l
+    - --since "2023-04-12 09:30:00" --until "2023-05-12 09:00:00"
+    - --since "-1 hour"
+    - -p
+        - error
+        - alert
+        - notice
+        - warning
+        - info
+        - debug
+
+
+# Time
+- timedatectl
+- timedatectl list-timezones
+- timedatectl set-timezone Aisa/Kolkata
+
+# time sync (Q)
+> rhel9 uses chrony
+vim /etc/chrony.conf
+add this , address will be given?
+`server <address> ibrust`
+`systemctl restart chronyd`
+`chronyc sources -v`
+
+
+
+# Job Scheduel
+
+- /etc/chrontab
+
+`crontab -e -u <username>`
+enter --> new screen with file --> add this and save
+17  11  *   *   *   mkdir /test 
