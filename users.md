@@ -162,3 +162,21 @@ https://blog.victormendonca.com/2020/11/18/linux-logical-volume-manager/
 
 
 # services
+commands
+start stop enable disable restart
+mask  --> isolate service from update/change
+unmask --> remove mask
+
+
+# logs
+- common directories
+    - /var/log
+        - messages  <-- logs
+        - secure  <-- 
+        - cron
+        - boot.log  <-- generated on/before boot time
+
+- logs generated because of this file (importent)
+    - /etc/rsyslog.conf
+## Events
+> see in book
