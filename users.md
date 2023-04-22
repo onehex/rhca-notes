@@ -213,9 +213,40 @@ add this , address will be given?
 
 # Job Scheduel
 
-- /etc/chrontab
+- /etc/crontab
 
-`crontab -e -u <username>`
+`crontab -e -ls u <username>`
 enter --> new screen with file --> add this and save
-`17  11  *   *   *   mkdir /test`
+`17  11  *   *   *   <username> mkdir /test`
+> remember firs * is minute second * is hour
 > this is a recuring job 
+
+- list jobs
+    - `crontab -lu <username>`
+
+## Networking
+cidr.xyz
+
+## show network address
+ip a
+ip addr
+
+
+## set ip from GUI
+corner > wired connection > wired settings > ip4 > manual
+
+## set ip from commandline
+nmcli connection show
+
+nmcli con mod ens160 ip4.addresses 192.168.12.14/24 ipv4.gateway 192.168.12.254 ipv4.dns 192.168.254.254 ip4.method manual
+
+nmcli connection down ens160
+
+nmcli connection up ens160
+
+
+## hostname
+hostname
+hostnamectl set-hostname newhost.name.com
+
+bash
