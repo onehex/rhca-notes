@@ -250,3 +250,8 @@ hostname
 hostnamectl set-hostname newhost.name.com
 
 bash
+
+
+## nameserver
+/etc/resolv.conf
+> restart netwrok manager entry will come back
