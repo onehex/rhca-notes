@@ -293,3 +293,8 @@ firewall-cmd --list-services
 
 # SELinux
 ls -lZ
+
+## change context
+chcon -t httpd_sys_content_t demo.txt
+
+restorecon -v demo2.txt <-- change defualt context
