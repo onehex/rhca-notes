@@ -255,3 +255,13 @@ bash
 ## nameserver
 /etc/resolv.conf
 > restart netwrok manager entry will come back
+
+
+# tuned
+yum install tuned
+systemctl restart tuned
+tuned-adm profile
+tuned-adm recommend
+tuned-adm profile virtual-guest
+tuned-adm profile balanced
+tuned-adm profile active
