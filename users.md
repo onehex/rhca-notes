@@ -291,6 +291,8 @@ firewall-cmd --permanent --remove-service=http
 firewall-cmd --reload
 firewall-cmd --list-services
 
+# SE Linux
+ls -lZ
 
 # SELinux
 ls -lZ
