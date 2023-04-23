@@ -278,3 +278,16 @@ firewall-cmd --permanent --add-service=http
 firewall-cmd --list-services
 firewall-cmd --reload
 firewall-cmd --list-services
+
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+firewall-cmd --list-ports
+
+firewall-cmd --permanent --remove-port=443/tcp
+firewall-cmd --reload
+firewall-cmd --list-ports
+
+firewall-cmd --permanent --remove-service=http
+firewall-cmd --reload
+firewall-cmd --list-services
+
