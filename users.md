@@ -265,3 +265,16 @@ tuned-adm recommend
 tuned-adm profile virtual-guest
 tuned-adm profile balanced
 tuned-adm profile active
+
+# firewall
+yum install firewalld
+firewall-cmd --list-all
+firewall-cmd --get-services
+
+## add service to firewall
+firewall-cmd --permanent --add-service=http
+> permanent is important
+
+firewall-cmd --list-services
+firewall-cmd --reload
+firewall-cmd --list-services
