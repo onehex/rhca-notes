@@ -291,6 +291,8 @@ firewall-cmd --permanent --remove-service=http
 firewall-cmd --reload
 firewall-cmd --list-services
 
+
+
 # SELinux
 ls -lZ
 
@@ -298,3 +300,18 @@ ls -lZ
 chcon -t httpd_sys_content_t demo.txt
 
 restorecon -v demo2.txt <-- change defualt context
+
+## change mode
+vim /etc/selinux/config
+    - SELINUX=<mode>  <-- change mode permanently
+
+
+- setenforce
+
+- check enforce
+    - getenforce
+
+
+setsebool -P samba_enable_home_dirs
+setsebool -P samba_enable_home_dirs on
+setsebool -P samba_enable_home_dirs off
