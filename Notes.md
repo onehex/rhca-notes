@@ -315,3 +315,7 @@ vim /etc/selinux/config
 setsebool -P samba_enable_home_dirs
 setsebool -P samba_enable_home_dirs on
 setsebool -P samba_enable_home_dirs off
+
+
+# SSH
+# NFS
