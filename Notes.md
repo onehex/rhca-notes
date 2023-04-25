@@ -337,3 +337,9 @@ tar -cvjf $DEST/backup.tar.bz2 $SOR
 
 
 # podman
+
+yum install podman
+podman pull httpd
+    - select docker image with down arrow and hit enter
+
+podman run -d httpd
