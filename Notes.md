@@ -320,3 +320,18 @@ setsebool -P samba_enable_home_dirs off
 # SSH
 
 # NFS
+
+
+# Bash Script
+
+## backup
+```bash
+#!/bin/bash
+
+read -p "enter dir to backup (ex: /etc) : " SOR
+read -p "enter destination to save backup (ex: /home): " DEST
+
+tar -cvjf $DEST/backup.tar.bz2 $SOR 
+
+```
+
