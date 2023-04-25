@@ -338,8 +338,23 @@ tar -cvjf $DEST/backup.tar.bz2 $SOR
 
 # podman
 
-yum install podman
-podman pull httpd
+`yum install podman`
+`podman pull httpd`
     - select docker image with down arrow and hit enter
 
-podman run -d httpd
+`podman run -d httpd`
+
+`podman ps`
+
+
+
+`podman run -it --name=centos centos`
+`ctrl` + `pq`
+
+`podman stop <id>/<name>`
+    - get id from podmna ps
+
+`podman rm <NAMES>`
+
+`podman images`
+podman rmi httpd.latedt
